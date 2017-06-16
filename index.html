@@ -5,6 +5,7 @@
 		<title>优购时尚商城-时尚服饰鞋包网购首选-优生活，购时尚！</title>
 		<link rel="stylesheet" type="text/css" href="css/base.css"/>
 		<script src="js/jquery-1.12.4.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.lazyload.js"></script>
 		<script src="js/base.js" type="text/javascript" charset="utf-8"></script></scrip>
 	</head>
 	<body>
@@ -14,13 +15,15 @@
 				<div class="ad_left">
 					<a href="#">时尚商城</a>
 					<a href="#">海&nbsp;外&nbsp;购</a>
-					<a href="#">手机优购</a>
-					<div class="hide">
-						<div class="background">
+					<div class="hide_out">
+					    <a href="#">手机优购</a>
+					    <div class="hide">
+						    <div class="background">
 							<a href=""></a>
 							<a href=""></a>
 							<p><i>下载安装</i><b>优购客户端</b><i>百丽在线服务</i></p>
-						</div>
+						    </div>
+					    </div>
 					</div>
 				</div>
 				<div class="ad_right">
@@ -46,7 +49,7 @@
 			<div class="header_content">
 				<img class="logo" src="img/logo.png"/>
 				<div class="search">
-					<input type="text" id="search"/>
+					<input type="text" id="search" style="font-size:20px;text-indent:10px;"/>
 					<div id="bt">
 						<div class='search_logo'></div>
 						<div class='search_text'>搜索</div>
@@ -64,9 +67,13 @@
 					</ul>
 				</div>
 				<div class="shop_car">
-					<a class="shop">购物车(<i>0</i>)件</a>
+					<div class="hide_out">
+						<a class="shop">购物车(<i>0</i>)件</a>
+						<div><a>您的购物车中还没有任何商品！</a></div>
+					</div>
+					
 					<a class="shop_text" href="">百丽国际旗下购物网站</a>
-					<div><a>您的购物车中还没有任何商品！</a></div>
+					
 				</div>
 			</div>
 			<div class="header_nav">
@@ -84,7 +91,573 @@
 			</div>
 		</div>
 		<!--body身体-->
-		<div id="body"></div>
+		<div id="body">
+			<div class="nav">
+				<div class="daogou">
+					<ul>
+						<div class="background"></div>
+						<li><a href="">男鞋</a>/<a href="">女鞋</a></li>
+						<li><a href="">凉鞋上新</a><a href="">浅口鞋</a><a href="">休闲男鞋</a></li>						
+						<div class="hide_out">
+							<div class="box">
+							<div class="title"><a href="">精美女鞋</a></div>
+							<li><a class="color_red" href="">女凉鞋</a></li>
+							<li><a href="">热销单鞋</a></li>
+							<li><a href="">浅口鞋</a></li>
+							<li><a href="">乐福鞋</a></li>
+							<li><a href="">满帮鞋</a></li>
+							<li><a href="">专柜同款</a></li>
+							<li><a href="">平底鞋</a></li>
+							<li><a href="">尖头女鞋</a></li>
+							<li><a href="">坡跟鞋</a></li>
+							<li><a href="">玛丽珍</a></li>
+							<li><a href="">鱼嘴鞋</a></li>
+							<li><a href="">布洛克</a></li>
+							<li><a href="">运动风</a></li>
+							<li><a href="">松糕鞋</a></li>
+							</div>
+							<div class="box">
+							<div class="title"><a href="">精品男鞋</a></div>
+							<li><a href="">男凉鞋</a></li>
+							<li><a href="">打孔鞋</a></li>
+							<li><a href="">热销男鞋</a></li>
+							<li><a href="">专柜同款</a></li>
+							<li><a href="">正装鞋</a></li>
+							<li><a href="">帆布鞋</a></li>
+							<li><a href="">布洛克</a></li>
+							<li><a href="">豆豆鞋</a></li>
+							<li><a href="">休闲男鞋</a></li>
+							<li><a href="">乐福鞋</a></li>
+							</div>
+							<div class="box">
+							<div class="title"><a href="">时尚品牌</a></div>
+							<li><a href="">百丽</a></li>
+							<li><a href="">她他</a></li>
+							<li><a href="">天美意</a></li>
+							<li><a href="">思加图</a></li>
+							<li><a href="">百思图</a></li>
+							<li><a href="">真美诗</a></li>
+							<li><a href="">森达</a></li>
+							<li><a href="">暇步士</a></li>
+							<li><a href="">妙丽</a></li>
+							<li><a href="">拔佳</a></li>
+							</div>
+							
+						</div>
+					</ul>
+					
+					
+					<ul>
+						<div class="background"></div>
+						<li><a href="">运动</a></li>
+						<li><a href="">17年新款</a><a href="">T恤</a><a href="">运动鞋</a></li>						
+						<div class="hide_out">
+							<div class="box">
+							<div class="title"><a href="">运动鞋</a></div>
+							<li><a href="">跑步鞋</a></li>
+							<li><a href="">篮球鞋</a></li>
+							<li><a href="">板鞋</a></li>
+							<li><a href="">帆布鞋</a></li>
+							<li><a href="">休闲鞋</a></li>
+							<li><a href="">足球鞋</a></li>
+							<li><a href="">训练鞋</a></li>
+							<li><a href="">户外鞋</a></li>
+							</div>
+							<div class="box">
+							<div class="title"><a href="">运动服</a></div>
+							<li><a href="">T恤</a></li>
+							<li><a href="">POLO衫</a></li>
+							<li><a href="">背心</a></li>
+							<li><a href="">紧身衣</a></li>
+							<li><a href="">短裤</a></li>
+							<li><a href="">长裤</a></li>
+							</div>
+							<div class="box">
+							<div class="title"><a href="">运动包配</a></div>
+							<li><a href="">双肩包</a></li>
+							<li><a href="">单肩包</a></li>
+							<li><a href="">斜挎包</a></li>
+							<li><a href="">袜子</a></li>
+							<li><a href="">球类</a></li>
+							<li><a href="">装备</a></li>
+							</div>
+							<div class="box">
+							<div class="title"><a href="">热门品牌</a></div>
+							<li><a href="">耐克</a></li>
+							<li><a href="">阿迪达斯</a></li>
+							<li><a href="">三叶草</a></li>
+							<li><a href="">匡威</a></li>
+							<li><a href="">万斯</a></li>
+							<li><a href="">彪马</a></li>
+							<li><a href="">NB</a></li>
+							<li><a href="">阿迪NEO</a></li>
+							<li><a href="">鬼冢虎</a></li>
+							<li><a href="">李宁</a></li>
+							</div>
+						</div>
+					</ul>
+					
+					
+					<ul>
+						<div class="background"></div>
+						<li><a href="">户外</a></li>
+						<li><a href="">T恤</a><a href="">皮肤衣</a><a href="">休闲裤</a><a href="">冲锋衣</a></li>						
+						<div class="hide_out">
+							<div class="box">
+							<div class="title"><a href="">热卖品牌</a></div>
+							<li><a href="">哥伦比亚</a></li>
+							<li><a href="">乐斯菲斯</a></li>
+							<li><a href="">狼爪</a></li>
+							<li><a href="">CAT</a></li>
+							</div>
+							<div class="box">
+							<div class="title"><a href="">户外服装</a></div>
+							<li><a href="">皮肤衣</a></li>
+							<li><a href="">长袖T恤</a></li>
+							<li><a href="">抓绒衣</a></li>
+							<li><a href="">冲锋衣</a></li>
+							<li><a href="">休闲裤</a></li>
+							<li><a href="">冲锋裤</a></li>
+							<li><a href="">羽绒服</a></li>
+							<li><a href="">卫衣</a></li>
+							<li><a href="">速干裤</a></li>
+							</div>
+							<div class="box">
+							<div class="title"><a href="">户外鞋靴</a></div>
+							<li><a href="">登山鞋</a></li>
+							<li><a href="">徒步鞋</a></li>
+							<li><a href="">溯溪鞋</a></li>
+							<li><a href="">休闲鞋</a></li>
+							<li><a href="">凉拖鞋</a></li>
+							<li><a href="">越野鞋</a></li>
+							<li><a href="">休闲鞋</a></li>
+							</div>
+							<div class="box">
+							<div class="title"><a href="">户外包配</a></div>
+							<li><a href="">户外包</a></li>
+							<li><a href="">辅助工具</a></li>
+							<li><a href="">配件</a></li>
+							</div>
+							
+						</div>
+					</ul>
+					
+					<ul>
+						<div class="background"></div>
+						<li><a href="">男装</a>/<a href="">女装</a>/<a href="">内衣</a></li>
+						<li><a href="">T恤</a><a href="">衬衫</a><a href="">休闲裤</a><a href="">牛仔裤</a></li>						
+						<div class="hide_out">
+							<div class="box">
+							<div class="title"><a href="">品质男装</a></div>
+							<li><a href="">T恤</a></li>
+							<li><a href="">衬衫</a></li>
+							<li><a href="">POLO衫</a></li>
+							<li><a href="">短裤</a></li>
+							<li><a href="">牛仔裤</a></li>
+							<li><a href="">休闲裤</a></li>
+							</div>
+							<div class="box">
+							<div class="title"><a href="">潮流女装</a></div>
+							<li><a href="">T恤</a></li>
+							<li><a href="">衬衫</a></li>
+							<li><a href="">连衣裙</a></li>
+							<li><a href="">短裤</a></li>
+							<li><a href="">牛仔裤</a></li>
+							<li><a href="">休闲裤</a></li>
+							</div>
+							<div class="box">
+							<div class="title"><a href="">国际大牌</a></div>
+							<li><a href="">LEE</a></li>
+							<li><a href="">Wrangler</a></li>
+							</div>
+							<div class="box">
+							<div class="title"><a href="">内衣品牌</a></div>
+							<li><a href="">浪莎</a></li>
+							<li><a href="">三枪</a></li>
+							</div>
+							
+						</div>
+					</ul>
+					
+					<ul>
+						<div class="background"></div>
+						<li><a href="">童装</a>/<a href="">童鞋</a>/<a href="">包配</a></li>
+						<li><a href="">T恤</a><a href="">裤装</a><a href="">跑步鞋</a><a href="">书包</a></li>						
+						<div class="hide_out">
+							<div class="box">
+							<div class="title"><a href="">热门品牌</a></div>
+							<li><a class="color_red" href="">阿迪</a></li>
+							<li><a href="">迪士尼</a></li>
+							<li><a href="">百丽</a></li>
+							<li><a href="">小黄人</a></li>
+							<li><a href="">彪马</a></li>
+							<li><a href="">耐克</a></li>
+							</div>
+							<div class="box">
+							<div class="title"><a href="">舒适童鞋</a></div>
+							<li><a class="color_red" href="">跑步鞋</a></li>
+							<li><a href="">学步鞋</a></li>
+							<li><a href="">板鞋</a></li>
+							<li><a href="">户外鞋</a></li>
+							<li><a href="">足球鞋</a></li>
+							<li><a href="">篮球鞋</a></li>
+							</div>
+							<div class="box">
+							<div class="title"><a href="">可爱童装</a></div>
+							<li><a class="color_red" href="">儿童套装</a></li>
+							<li><a href="">外套</a></li>
+							<li><a href="">裤装</a></li>
+							<li><a href="">T恤</a></li>
+							</div>
+							<div class="box">
+							<div class="title"><a href="">配饰/母婴</a></div>
+							<li><a href="">帽子</a></li>
+							<li><a class="color_red" href="">背包</a></li>
+							<li><a href="">袜子</a></li>
+							</div>
+							
+						</div>
+					</ul>
+					
+					<ul>
+						<div class="background"></div>
+						<li><a href="">箱包</a>/<a href="">配饰</a></li>
+						<li><a href="">女包</a><a href="">男包</a><a href="">饰品</a></li>						
+						<div class="hide_out">
+							<div class="box">
+							<div class="title"><a href="">魅力女包</a></div>
+							<li><a href="">手提/书包</a></li>
+							<li><a href="">单肩/斜跨</a></li>
+							<li><a href="">双肩包</a></li>
+							<li><a href="">钱包</a></li>
+							</div>
+							<div class="box">
+							<div class="title"><a href="">经典男包</a></div>
+							<li><a href="">单肩/斜跨</a></li>
+							<li><a href="">手提/手包</a></li>
+							<li><a href="">双肩包</a></li>
+							<li><a href="">钱包</a></li>
+							</div>
+							<div class="box">
+							<div class="title"><a href="">珠宝配饰</a></div>
+							<li><a href="">项链</a></li>
+							<li><a href="">项坠/吊坠</a></li>
+							<li><a href="">戒指/指环</a></li>
+							<li><a href="">手链/手镯</a></li>
+							</div>
+							
+						</div>
+					</ul>
+					
+					<ul>
+						<div class="background"></div>
+						<li><a href="">海外购</a></li>
+						<li><a href="">海外直邮</a><a href="">优惠组合</a></li>						
+						
+					</ul>
+				</div>
+				<div class="lunbotu">
+					<ul>
+						<a href=""></a>
+						<a href=""></a>
+						<a href=""></a>
+						<a href=""></a>
+						<a href=""></a>
+						<a href=""></a>
+					</ul>
+					<ul>
+						<i>1</i>
+						<i>2</i>
+						<i>3</i>
+						<i>4</i>
+						<i>5</i>
+						<i>6</i>
+					</ul>
+				</div>
+			</div>
+			<div class="Hot">
+				<div class="Hot_top">
+					<i>热门品牌</i><b>HOT BRAND</b><a href="">more&nbsp;></a>
+				</div>
+				<div class="Hot_mid">
+					<a href=""></a>
+					<a href=""></a>
+					<a href=""></a>
+					<a href=""></a>
+				</div>
+				<div class="Hot_bot">
+					<div class="sbox">
+						<div class="yidongtiao">
+					   <!--<ul>
+					   	<a href=''><img /></a>
+					   </ul>-->
+					   </div>
+					</div>
+					<div class="left"></div>
+					<div class="right"></div>
+				</div>
+			</div>
+			<div class="cloth_arr" id="fix1">
+				<div class="cloth_arr_top">
+					<a href=""><i>女鞋馆</i><b>WOMEN'S SHOES</b></a><a href="">MORE&nbsp;>></a>
+				</div>
+				<div class="cloth_arr_bot">
+					<div class="first">
+							<a class="title" href="">平底鞋</a>
+							<a class="title" href="">坡跟鞋</a>
+							<a href=""><img src="img/womenshoes/belle507639379.jpg"/></a>
+							<a href=""><img src="img/womenshoes/tata544791364.jpg"/></a>
+							<a href=""><img src="img/womenshoes/teenmix507609543.jpg"/></a>
+							<a href=""><img src="img/womenshoes/staccato507605520.jpg"/></a>
+							<a href=""><img src="img/womenshoes/bata507639265.jpg"/></a>
+							<a href=""><img src="img/womenshoes/hushpuppies507610094.jpg"/></a>
+							<a href=""><img src="img/womenshoes/basto523422927.jpg"/></a>
+							<a href=""><img src="img/womenshoes/crocs507644176.jpg"/></a>
+							<a href=""><img src="img/womenshoes/innet474093564.jpg"/></a>
+							<a href=""><img src="img/womenshoes/joypeace468306549.jpg"/></a>
+					</div>
+					<div class="second">
+						<a href=""></a>
+					</div>
+					<div class="third">
+						<div class="third_top">
+							<a href=""><img src="img/womenshoes/b5351ff42db24ddeb65aa7d40dc51cd8.jpg"/></a>
+							<a href=""><img src="img/womenshoes/a6919020012d4abeb069889f61eb35ae.jpg"/></a>
+							<a href=""><img src="img/womenshoes/b4aaa8abf5dc4e32904618101bfa8553.jpg"/></a>
+						</div>
+						<div class="third_bot">
+							<a href=""><img src="img/womenshoes/2be2a82fa8a742b19ca78504f9a87107.jpg"/></a>
+							<a href=""><img src="img/womenshoes/1306b723be2445799948e843bb81392d.jpg"/></a>
+							<a href=""><img src="img/womenshoes/092f330404474216a5b8ad60c227f106.jpg"/></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="cloth_arr" id="fix2">
+				<div class="cloth_arr_top">
+					<a href=""><i>男鞋馆</i><b>MEN'S SHOES</b></a><a href="">MORE&nbsp;>></a>
+				</div>
+				<div class="cloth_arr_bot">
+					<div class="first">
+							<a class="title" href="">商务鞋</a>
+							<a class="title" href="">休闲鞋</a>
+							<a href=""><img src="img/menshoes/belle507639379.jpg"/></a>
+							<a href=""><img src="img/menshoes/bata507639265.jpg"/></a>
+							<a href=""><img src="img/menshoes/camel507617935.jpg"/></a>
+							<a href=""><img src="img/menshoes/crocs507644176.jpg"/></a>
+							<a href=""><img src="img/menshoes/fuguiniao487835102.jpg"/></a>
+							<a href=""><img src="img/menshoes/hushpuppies507610094.jpg"/></a>
+							<a href=""><img src="img/menshoes/playboy473997258.jpg"/></a>
+							<a href=""><img src="img/menshoes/senda506405009.jpg"/></a>
+							<a href=""><img src="img/menshoes/tata544791364.jpg"/></a>
+							<a href=""><img src="img/menshoes/teenmix507609543.jpg"/></a>
+					</div>
+					<div class="second">
+						<a href=""></a>
+					</div>
+					<div class="third">
+						<div class="third_top">
+							<a href=""><img src="img/menshoes/75cd8528fa104f3390870edced7ce954.jpg"/></a>
+							<a href=""><img src="img/menshoes/d5f84249829e4d58b6152bc610e72b64.jpg"/></a>
+							<a href=""><img src="img/menshoes/3c7a3fa9b11a40828df65ecb226e0110.jpg"/></a>
+						</div>
+						<div class="third_bot">
+							<a href=""><img src="img/menshoes/4055697071d24a949b478773b8f6f212.jpg"/></a>
+							<a href=""><img src="img/menshoes/a85cfcf25862443587ce2767b68e8b40.jpg"/></a>
+							<a href=""><img src="img/menshoes/32f637bbf5f646d3a3d67cbc5cd617a9.jpg"/></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="cloth_arr" id="fix3">
+				<div class="cloth_arr_top">
+					<a href=""><i>运动馆</i><b>SPORT</b></a><a href="">MORE&nbsp;>></a>
+				</div>
+				<div class="cloth_arr_bot">
+					<div class="first">
+							<a class="title" href="">运动鞋</a>
+							<a class="title" href="">运动服</a>
+							<a href=""><img src="img/sport/adidas506399348.jpg"/></a>
+							<a href=""><img src="img/sport/adidasclassic507604745.jpg"/></a>
+							<a href=""><img src="img/sport/adidasneo507638832.jpg"/></a>
+							<a href=""><img src="img/sport/converse506750560.jpg"/></a>
+							<a href=""><img src="img/sport/gzh2.jpg"/></a>
+							<a href=""><img src="img/sport/newbalance507610154.jpg"/></a>
+							<a href=""><img src="img/sport/nike507646290.jpg"/></a>
+							<a href=""><img src="img/sport/puma507639858.jpg"/></a>
+							<a href=""><img src="img/sport/reebok534338687.jpg"/></a>
+							<a href=""><img src="img/sport/xtep507609335.jpg"/></a>
+					</div>
+					<div class="second">
+						<a href=""></a>
+					</div>
+					<div class="third">
+						<div class="third_top">
+							<a href=""><img src="img/sport/0d448bac68004eeeb72258b4e69d88ad.jpg"/></a>
+							<a href=""><img src="img/sport/bf322da94c3a41a18f75fd016144713d.jpg"/></a>
+							<a href=""><img src="img/sport/4265bb18aad24936a288829490b18caf.jpg"/></a>
+						</div>
+						<div class="third_bot">
+							<a href=""><img src="img/sport/840baed60dfb4f38b3c7e7ac65998079.jpg"/></a>
+							<a href=""><img src="img/sport/7976404828834e82a04f52a73d53b4ef.jpg"/></a>
+							<a href=""><img src="img/sport/a7021022e2f64f00a7222a3957a2e76a.jpg"/></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="cloth_arr" id="fix4">
+				<div class="cloth_arr_top">
+					<a href=""><i>户外馆</i><b>OUTDOOR</b></a><a href="">MORE&nbsp;>></a>
+				</div>
+				<div class="cloth_arr_bot">
+					<div class="first">
+							<a class="title" href="">户外鞋</a>
+							<a class="title" href="">户外服</a>
+							<a href=""><img src="img/outdoor/camel507617935.jpg"/></a>
+							<a href=""><img src="img/outdoor/cat507636509.jpg"/></a>
+							<a href=""><img src="img/outdoor/chums507603735.jpg"/></a>
+							<a href=""><img src="img/outdoor/columbia507642261.jpg"/></a>
+							<a href=""><img src="img/outdoor/jackwolfskin507637659.jpg"/></a>
+							<a href=""><img src="img/outdoor/merrell507697299.jpg"/></a>
+							<a href=""><img src="img/outdoor/rax507727741.jpg"/></a>
+							<a href=""><img src="img/outdoor/thenorthface507728112.jpg"/></a>
+							<a href=""><img src="img/outdoor/timberland507609698.jpg"/></a>
+							<a href=""><img src="img/outdoor/toread507608931.jpg"/></a>
+					</div>
+					<div class="second">
+						<a href=""></a>
+					</div>
+					<div class="third">
+						<div class="third_top">
+							<a href=""><img src="img/outdoor/a2313b26b0704a3ea440625af10a023c.jpg"/></a>
+							<a href=""><img src="img/outdoor/eb6a8593694547e3894f4f1cb33cc858.jpg"/></a>
+							<a href=""><img src="img/outdoor/47779b836ff8455695174d0cca3f00df.jpg"/></a>
+						</div>
+						<div class="third_bot">
+							<a href=""><img src="img/outdoor/bdf07fd4e50941098ba04b5494871378.jpg"/></a>
+							<a href=""><img src="img/outdoor/fb641592cbfb4ff493b4b627b3e1d09d.jpg"/></a>
+							<a href=""><img src="img/outdoor/8626c2ded7644e6ca07c39bc4c11e60b.jpg"/></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="cloth_arr" id="fix5">
+				<div class="cloth_arr_top">
+					<a href=""><i>首尔站</i><b>SEOUL STATION</b></a><a href="">MORE&nbsp;>></a>
+				</div>
+				<div class="cloth_arr_bot">
+					<div class="first">
+							<a class="title" href="">男装</a>
+							<a class="title" href="">女装</a>
+							<a href=""><img src="img/seoul/advisory493099524.jpg"/></a>
+							<a href=""><img src="img/seoul/agatha506397541.jpg"/></a>
+							<a href=""><img src="img/seoul/andew493099807.jpg"/></a>
+							<a href=""><img src="img/seoul/beyondcloset493099739.jpg"/></a>
+							<a href=""><img src="img/seoul/biliwili487677140.jpg"/></a>
+							<a href=""><img src="img/seoul/buckaroo493099875.jpg"/></a>
+							<a href=""><img src="img/seoul/chrischristy506750291.jpg"/></a>
+							<a href=""><img src="img/seoul/nain502454175.jpg"/></a>
+							<a href=""><img src="img/seoul/nii504849809.jpg"/></a>
+							<a href=""><img src="img/seoul/usnthem493099666.jpg"/></a>
+					</div>
+					<div class="second">
+						<a href=""></a>
+					</div>
+					<div class="third">
+						<div class="third_top">
+							<a href=""><img src="img/seoul/3744865df7c24bbc85dcd1983310fba6.jpg"/></a>
+							<a href=""><img src="img/seoul/518c47d9a495408793dfe3a60aa80cd9.jpg"/></a>
+							<a href=""><img src="img/seoul/4a1a379f47dd4272af7155a286f04f6e.jpg"/></a>
+						</div>
+						<div class="third_bot">
+							<a href=""><img src="img/seoul/1a0c9828e6e0486abcbbbd8c7162c21c.jpg"/></a>
+							<a href=""><img src="img/seoul/cde66c917c6842c2909e941600b9ef4c.jpg"/></a>
+							<a href=""><img src="img/seoul/4760645bbaac4820b01fa3b8ea33d466.jpg"/></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="cloth_arr" id="fix6">
+				<div class="cloth_arr_top">
+					<a href=""><i>服装馆</i><b>CLOTHES</b></a><a href="">MORE&nbsp;>></a>
+				</div>
+				<div class="cloth_arr_bot">
+					<div class="first">
+							<a class="title" href="">上装</a>
+							<a class="title" href="">裤装</a>
+							<a href=""><img src="img/clothes/deerway544848164.jpg"/></a>
+							<a href=""><img src="img/clothes/dickies507636553.jpg"/></a>
+							<a href=""><img src="img/clothes/europrimo464928410.jpg"/></a>
+							<a href=""><img src="img/clothes/giordano507610836.jpg"/></a>
+							<a href=""><img src="img/clothes/hyx507642790.jpg"/></a>
+							<a href=""><img src="img/clothes/inman507610638.jpg"/></a>
+							<a href=""><img src="img/clothes/lee506398422.jpg"/></a>
+							<a href=""><img src="img/clothes/lesmart460444728.jpg"/></a>
+							<a href=""><img src="img/clothes/markfairwhale506403575.jpg"/></a>
+							<a href=""><img src="img/clothes/toyouth507640027.jpg"/></a>
+					</div>
+					<div class="second">
+						<a href=""></a>
+					</div>
+					<div class="third">
+						<div class="third_top">
+							<a href=""><img src="img/clothes/6d4f7d5f302744d78e27e12d73a110f1.jpg"/></a>
+							<a href=""><img src="img/clothes/f8a4deb94aac4ecc8bbfc59af7e20e88.jpg"/></a>
+							<a href=""><img src="img/clothes/c36a608cb2104f9ab7c47a2a97dc6256.jpg"/></a>
+						</div>
+						<div class="third_bot">
+							<a href=""><img src="img/clothes/ff961f3a89564063947b6b58f358fc6f.jpg"/></a>
+							<a href=""><img src="img/clothes/195657fa42604f12aaa4b0ed605f4da7.jpg"/></a>
+							<a href=""><img src="img/clothes/d35f4bec8ea3464c8de434dec1b28675.jpg"/></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="cloth_arr" id="fix7">
+				<div class="cloth_arr_top">
+					<a href=""><i>孕童装</i><b>CHILDREN'S</b></a><a href="">MORE&nbsp;>></a>
+				</div>
+				<div class="cloth_arr_bot">
+					<div class="first">
+							<a class="title" href="">童鞋</a>
+							<a class="title" href="">童装</a>
+							<a href=""><img src="img/childrens/adidas507638809.jpg"/></a>
+							<a href=""><img src="img/childrens/adidasclassic507604745.jpg"/></a>
+							<a href=""><img src="img/childrens/bigwasp507612274.jpg"/></a>
+							<a href=""><img src="img/childrens/ce500386316.jpg"/></a>
+							<a href=""><img src="img/childrens/chums507603735.jpg"/></a>
+							<a href=""><img src="img/childrens/crocs507644176.jpg"/></a>
+							<a href=""><img src="img/childrens/deerway544848164.jpg"/></a>
+							<a href=""><img src="img/childrens/gzh2.jpg"/></a>
+							<a href=""><img src="img/childrens/nike507646290.jpg"/></a>
+							<a href=""><img src="img/childrens/puma507639858.jpg"/></a>
+					</div>
+					<div class="second">
+						<a href=""></a>
+					</div>
+					<div class="third">
+						<div class="third_top">
+							<a href=""><img src="img/childrens/caee2a510df74fe2be8af57542181f70.jpg"/></a>
+							<a href=""><img src="img/childrens/ede1053bea184252babcfa55c7828e14.jpg"/></a>
+							<a href=""><img src="img/childrens/995599f646f7413f939c3c2f0ba01810.jpg"/></a>
+						</div>
+						<div class="third_bot">
+							<a href=""><img src="img/childrens/d64710b804464b4fb1c998a59959e458.jpg"/></a>
+							<a href=""><img src="img/childrens/3cb877fd91a2427aa468c2c494a3b3cf.jpg"/></a>
+							<a href=""><img src="img/childrens/2b47a650561e46018dff257acdca3094.jpg"/></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="sale"></div>
+		</div>
 		<!--优购导购-->
 		<div id="daogou">
 			<div class="daogou_text">优购导购</div>
@@ -261,5 +834,18 @@
 				</div>
 			</div>
 		</div>
+	    <!--fix-->
+	    <div id="fix">
+	    	<a href="#fix1"></a>
+	    	<a href="#fix2"></a>
+	    	<a href="#fix3"></a>
+	    	<a href="#fix4"></a>
+	    	<a href="#fix6"></a>
+	    	<a href="#fix7"></a>
+	    	<a href="#fix5"></a>
+	    	<a href=""></a>
+	    	<a href="#header"></a>
+	    </div>
+	    
 	</body>
 </html>
