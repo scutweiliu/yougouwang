@@ -165,7 +165,59 @@ var cloth_arr=['url(img/womenshoes/3173f3ede69c42c1b4f615a8816f3bd5.jpg)','url(i
     	$(this).css('background-size','100% 100%');
     })
     
-    
+/**************特卖专区选框功能****************/
+var sale_index=0;
+changesale();
+changesaleli();
+//移入菜单改变sale_index
+$('#body .sale .sale_bot>ul>li').each(function(i){
+	$(this).mousemove(function(){
+		sale_index=i;
+		changesale();
+		changesaleli();
+	});
+});
+//根据sale_index控制图片显示
+function changesale(){
+  $('#body .sale .sale_bot>ul>li>div').each(function(i){
+	   if(sale_index==i){
+	   	var temp=-i*41+'px';
+		   $(this).css('display','block');
+		   $(this).css('top',temp);
+	   }else{
+		   $(this).css('display','none');
+	   }
+  })
+}
+function changesaleli(){
+  $('#body .sale .sale_bot>ul>li').each(function(i){
+	   if(sale_index==i){
+		   $(this).css('background','black');
+	   }else{
+		   $(this).css('background','white');
+	   }
+  })
+  $('#body .sale .sale_bot>ul>li>a:nth-of-type(1)').each(function(i){
+	   if(sale_index==i){
+		   $(this).css('color','white');
+	   }else{
+		   $(this).css('color','gray');
+	   }
+  })
+}
+/**************点击隐藏广告****************/
+$('#ad>a:nth-of-type(3)').mousedown(function(){
+	$('#ad').css('display','none');
+})
+/**************fix挂件的滚动****************/
+var fix_top=$('#fix').css('top');
+$(window).scroll(function(){
+//	console.log($(window).scrollTop());
+   if($(window).scrollTop()>=200){
+   	$('#fix').css('top','15px');
+   }else{$('#fix').css('top',parseInt(fix_top)-$(window).scrollTop()+'px');
+   }
+});
 /**************图片懒加载****************/
       var lazyarr=[];
       $("img").each(function(i){
