@@ -1,4 +1,4 @@
-body,dl,dt,dd,ul,ol,li,a,i,img,h1,h2,h3,h4,h5,h6,pre,form,fieldset,legend,input,button,textarea,select,p,blockquote,th,td{margin:0;padding:0;}
+body,dl,dt,dd,ul,ol,li,a,i,img,h1,h2,h3,h4,h5,h6,pre,form,fieldset,legend,input,button,textarea,select,p,blockquote,th,td,input,option{margin:0;padding:0;}
 body{
 	width:1440px;
 }
@@ -273,6 +273,209 @@ i{
 	height:553px;
 	background:url(../img/login/a8c6023508a242039dc31cd5be30cc44.jpg);
 }
+#body .login_box{
+	width:382px;
+	height:532px;
+	background:white;
+	margin-top:12px;
+	margin-right:228px;
+	float: right;
+	font-size:12px;
+}
+#body .login_box .login_box_top{
+	width:100%;
+	height:40px;
+	margin-top:24px;
+}
+#body .login_box .login_box_top>li{
+	width:125px;
+	height:100%;
+	float:left;
+	text-align: center;
+	line-height:40px;
+}
+#body .login_box .login_box_top>li:nth-of-type(1){
+	margin-left:68px;
+	background:gray;
+}
+#body .login_box .login_box_top>li:nth-of-type(2){
+	margin-left:3px;
+	background:black;
+}
+#body .login_box .login_box_top>li>a{
+	color:white;
+}
+#body .login_box .login_box_top>li>a:hover{
+	color:red;
+}
+#body .login_box .form{
+	margin-top:32px;
+	padding-left:35px;
+}
+#body .login_box .form .first{
+	height:38px;
+	color:black;
+}
+#body .login_box .form .first>input{
+	float:left;
+	width:240px;
+	height:36px;
+	border:1px solid lightgray;
+	border-left:0;
+	text-indent:5px;
+}
+#body .login_box .form .first .choice{
+	width:70px;
+	float:left;
+	background:url(../img/select.png) no-repeat;
+	background-position-x:58px;
+	border:1px solid lightgray;
+	text-align: center;
+}
+#body .login_box .form .first .choice>a{
+	width:40px;
+	height:36px;
+	display:block;
+	margin-left:10px;
+	color:black;
+	cursor:default;
+	font-size:13px;
+	line-height:36px;
+}
+#body .login_box .form .first .choice>a:hover{
+	color:red;
+}
+#body .login_box .form .first .choice>a:nth-of-type(2){
+	display:none;
+}
+#body .login_box .form .second{
+	height:38px;
+	margin-top:29px;
+	color:black;
+}
+#body .login_box .form .second>input{
+	float:left;
+	width:130px;
+	height:36px;
+	border:1px solid lightgray;
+	border-left:0;
+}
+#body .login_box .form .second .yanzhengma{
+	width:68px;
+	height:36px;
+	line-height:36px;
+	float:left;
+	border:1px solid lightgray;
+	border-right:0;
+	text-align: center;
+}
+#body .login_box .form .second>span{
+	width:110px;
+	height:38px;
+	float:left;
+	background:url(../img/yanzhengma/imageCaptcha.png);
+    margin-left:3px;
+}
+
+#body .login_box .form .third{
+	height:38px;
+	margin-top:29px;
+	color:black;
+}
+#body .login_box .form .third>input{
+	float:left;
+	width:150px;
+	height:36px;
+	border:1px solid lightgray;
+	border-left:0;
+}
+#body .login_box .form .third .yanzhengma_duanxin{
+	width:84px;
+	height:36px;
+	line-height:36px;
+	float:left;
+	border:1px solid lightgray;
+	border-right:0;
+	text-align: center;
+}
+#body .login_box .form .third>a{
+	width:73px;
+	height:38px;
+	line-height:38px;
+	float:left;
+	text-align: center;
+	background:black;
+	color:white;
+	margin-left:5px;
+}
+#body .login_box .form .third>a:hover{
+	background:red;
+}
+
+#body .login_box .form .forth{
+	height:38px;
+	margin-top:29px;
+	color:black;
+}
+#body .login_box .form .forth>input{
+	float:left;
+	width:242px;
+	height:36px;
+	border:1px solid lightgray;
+	border-left:0;
+}
+#body .login_box .form .forth .yanzhengma_mima{
+	width:60px;
+	height:36px;
+	line-height:36px;
+	float:left;
+	border:1px solid lightgray;
+	border-right:0;
+	padding-left:10px;
+}
+#body .login_box .form .fifth{
+	height:38px;
+	margin-top:29px;
+	color:black;
+}
+#body .login_box .form .fifth>input{
+	float:left;
+	width:242px;
+	height:36px;
+	border:1px solid lightgray;
+	border-left:0;
+}
+#body .login_box .form .fifth .yanzhengma_querenmima{
+	width:60px;
+	height:36px;
+	line-height:36px;
+	float:left;
+	border:1px solid lightgray;
+	border-right:0;
+	padding-left:10px;
+}
+
+#body .login_box .form .sixth{
+	height:38px;
+	margin-top:29px;
+	color:gray;
+	text-align: center;
+	line-height:38px;
+}
+#body .login_box .form .sixth>input{
+	margin-top:5px;
+}
+#body .login_box .form>input{
+	width:302px;
+	height:38px;
+	background:#e1373a;
+	color:white;
+	font-size:18px;
+	line-height:38px;
+	text-align: center;
+	border:0;
+}
+
 
 
 /***

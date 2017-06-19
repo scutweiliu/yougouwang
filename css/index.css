@@ -278,7 +278,7 @@
 #body .Hot .Hot_bot .sbox{
 	width:1100px;
 	height:116px;
-	background: red;
+	/*background: red;*/
 	position: absolute;
 	border-bottom:0;
 	left:45px;
@@ -542,6 +542,7 @@
 	position:fixed;
 	top:215px;
 	right:34px;
+	z-index:100;
 }
 #fix a{
 	width:40px;
@@ -557,6 +558,7 @@
 	opacity:0.8;
 	position:fixed;
 	bottom:0;
+	z-index:100;
 }
 #ad>img:nth-of-type(2n+1){
 	width:142px;

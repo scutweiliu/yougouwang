@@ -13,6 +13,14 @@ li{
 i{
 	font-style:normal;
 }
+.clearfix::after{
+	content: '';
+	clear: both;
+	display: block;
+	height:0;
+	overflow: hidden;
+	visibility: hidden;
+}
 /*头部结构*/
 #header{
 	width:100%;
@@ -174,7 +182,7 @@ i{
 }
 #header .header_ad .ad_right li:nth-of-type(n+5)>a{
 	background:url(../img/arraw_touming.png) no-repeat;
-	background-position-x:42px;
+	background-position-x:40px;
 	background-position-y:12px;
 	padding:0 14px;
 }
@@ -196,6 +204,7 @@ i{
 	border-left:1px solid lightgray;
 	border-right:1px solid lightgray;
 	border-bottom:1px solid white;
+	background-position-x:39px;
 	padding:0 13px;
 	color:gray;
 }
@@ -431,6 +440,7 @@ i{
 	/*background:blue;*/
 	border-bottom:1px solid gray;
 	margin-top:31px;
+	float: left;
 }
 #daogou .daogou_text{
 	width:1184px;
@@ -551,6 +561,7 @@ i{
 	height:326px;
 	background:#f4f4f4;
 	border-top:1px solid gray;
+	float: left;
 }
 #footer .footer_top{
 	width:1189px;
