@@ -83,6 +83,8 @@ $(function(){
       	lazyarr.push($(this).attr('src'));
       	$(this).attr('data-original',lazyarr[i]);
       });
-      $("img").lazyload({effect: "fadeIn"});
+      $("img").lazyload({
+      	placeholder:"img/lazyplaceholder.png",
+      	effect: "fadeIn"});
 
 })
