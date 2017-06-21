@@ -293,22 +293,36 @@ i{
 	float:left;
 	text-align: center;
 	line-height:40px;
+	cursor:pointer;
 }
 #body .login_box .login_box_top>li:nth-of-type(1){
 	margin-left:17px;
 	background:black;
 }
 #body .login_box .login_box_top>li:nth-of-type(2){
-	background:gray;
+	background:lightgray;
 }
 #body .login_box .login_box_top>li>a{
 	color:white;
 }
-#body .login_box .login_box_top>li>a:hover{
-	color:red;
+#body .login_box .login_box_top>li:nth-of-type(2)>a{
+	color:black;
 }
 #body .login_box .form{
 	padding-left:35px;
+}
+#body .login_box .form>i{
+	height:20px;
+	line-height:20px;
+	color:#e1373a;
+	padding-left:25px;
+	background:url(../img/alert.png) no-repeat 0 1px;
+}
+#body .login_box .form>i:nth-of-type(n+3){
+	display:none;
+}
+#body .login_box .form>i:nth-of-type(n-2){
+	visibility:hidden;
 }
 #body .login_box .form .first{
 	margin-top:32px;
@@ -344,7 +358,7 @@ i{
 
 #body .login_box .form .second{
 	height:38px;
-	margin-top:29px;
+	margin-top:9px;
 	color:black;
 	display:none;
 }
@@ -409,7 +423,7 @@ i{
 
 #body .login_box .form .forth{
 	height:38px;
-	margin-top:29px;
+	margin-top:9px;
 	color:black;
 }
 #body .login_box .form .forth>input{
@@ -433,7 +447,7 @@ i{
 
 #body .login_box .form .sixth{
 	height:38px;
-	margin-top:29px;
+	margin-top:9px;
 	color:gray;
 	text-align: center;
 	line-height:38px;
@@ -471,7 +485,7 @@ i{
 	float: left;
 	padding-left:60px;
 }
-#body .login_box>ul>li{
+#body .login_box>ul>a{
 	width:34px;
 	height:34px;
 	float: left;
@@ -479,16 +493,16 @@ i{
 	margin:2px 9px;
 	background:url(../img/login/denglu.png) -8px -7px;
 }
-#body .login_box>ul>li:nth-of-type(2){
+#body .login_box>ul>a:nth-of-type(2){
 	background-position:-68px -7px;
 }
-#body .login_box>ul>li:nth-of-type(3){
+#body .login_box>ul>a:nth-of-type(3){
 	background-position:-126px -7px;
 }
-#body .login_box>ul>li:nth-of-type(4){
+#body .login_box>ul>a:nth-of-type(4){
 	background-position:-183px -7px;
 }
-#body .login_box>ul>li:nth-of-type(5){
+#body .login_box>ul>a:nth-of-type(5){
 	background-position:-245px -7px;
 }
 

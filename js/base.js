@@ -1,6 +1,8 @@
 $(function(){
 	/**************图片懒加载****************/
       var lazyarr=[];
+      var aheight=[];
+      var awidth=[];
       $("img").each(function(i){
       	$(this).addClass('lazy');
       	lazyarr.push($(this).attr('src'));
@@ -10,7 +12,6 @@ $(function(){
       $("img").lazyload({
       	placeholder:"img/lazyplaceholder.png",
       	effect: "fadeIn"});
-	
 	
     //添加品牌框中的图片
     var oBox=$("#daogou .lunbotu .box");
