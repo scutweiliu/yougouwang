@@ -115,6 +115,17 @@ $(function(){
 			$('#body .login_box form>i:eq(3)').css('visibility','visible');
 		};
 	});
+	//格式错误时不允许提交
+	function check(){
+		return false;
 	
+	}
+
+//  $('#submit').mousedown(function(){
+//  	if(mima_text_reg.test($('#body .login_box form>.forth>input').val())){
+//		      $('#submit').attr("disabled", false);
+//		}else{
+//			$('#submit').attr("disabled", true);}
+//  })
 	
 })

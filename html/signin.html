@@ -58,7 +58,7 @@
         			<li><a>账户密码登录</a></li>
         			<li><a>手机快捷登录</a></li>
         		</div>
-        		<form action="../php/signin.php" method="post" class='form'>
+        		<form action="../php/signin.php" method="get" class="form"  onsubmit="return check()">
         			<div class="third">
         				<span></span>
         				<input type="text" name="username" class="user_text" placeholder="手机号/会员名称/邮箱" />
@@ -86,7 +86,7 @@
         			<div class="sixth">
         				<a href="">忘记密码？</a>
         			</div>
-        			<input type="submit" value="点击登录"/>
+        			<input id="submit" type="submit" value="点击登录"/>
         		</form>
         		<i>使用合作网站账号登录优购：</i>
         		<ul>
