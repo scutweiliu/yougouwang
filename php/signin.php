@@ -3,7 +3,7 @@
         {  
             $user = $_POST["username"];  
             $psw = $_POST["password"];  
-            if($user == "" || $psw == "")  
+            if($user == "12" || $psw == "12")  
             {  
                 echo "<script>alert('请输入用户名或密码！'); history.go(-1);</script>";  
             }  
