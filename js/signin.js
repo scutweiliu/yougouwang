@@ -116,16 +116,17 @@ $(function(){
 		};
 	});
 	//格式错误时不允许提交
-	function check(){
-		return false;
-	
-	}
+//	function check(){
+//		return false;
+//	
+//	}
 
-//  $('#submit').mousedown(function(){
+    $('#submit').click(function(){
 //  	if(mima_text_reg.test($('#body .login_box form>.forth>input').val())){
 //		      $('#submit').attr("disabled", false);
 //		}else{
 //			$('#submit').attr("disabled", true);}
-//  })
+//    $.post('https://scutweiliu.github.io/yougouwang/php/signin.php',)
+    })
 	
 })
